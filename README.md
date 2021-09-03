@@ -1,6 +1,6 @@
 # PyDiscord
 
-[![Discord server invite](https://discord.com/api/guilds/336642139381301249/embed.png)](https://discord.gg/r3sSKJJ) [![PyPI version info](https://img.shields.io/pypi/v/discord.py.svg)](https://pypi.python.org/pypi/discord.py) [![PyPI supported Python versions](https://img.shields.io/pypi/pyversions/pydiscord.svg)](https://pypi.python.org/pypi/pydiscord)
+[![Discord server invite](https://discord.com/api/guilds/336642139381301249/embed.png)](https://discord.gg/r3sSKJJ) [![PyPI version info](https://img.shields.io/pypi/v/discord.py.svg)](https://pypi.python.org/pypi/pydiscord) [![PyPI supported Python versions](https://img.shields.io/pypi/pyversions/pydiscord.svg)](https://pypi.python.org/pypi/pydiscord)
 
 A modern, easy to use, feature-rich, and async ready API wrapper for
 Discord written in Python, based on `discord.py`.
