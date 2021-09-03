@@ -15,8 +15,8 @@ msgstr ""
 "Generated-By: Babel 2.5.3\n"
 
 #: ../../ext/tasks/index.rst:4
-msgid "``discord.ext.tasks`` -- asyncio.Task helpers"
-msgstr "``discord.ext.tasks`` -- asyncio.Task ヘルパー"
+msgid "``pydiscord.ext.tasks`` -- asyncio.Task helpers"
+msgstr "``pydiscord.ext.tasks`` -- asyncio.Task ヘルパー"
 
 #: ../../ext/tasks/index.rst:8
 msgid ""
@@ -39,17 +39,17 @@ msgstr "スリープできる最大時間は何秒ですか？"
 
 #: ../../ext/tasks/index.rst:14
 msgid ""
-"The goal of this discord.py extension is to abstract all these worries "
+"The goal of this pydiscord.py extension is to abstract all these worries "
 "away from you."
-msgstr "discord.pyの拡張機能の目的は、こういった苦労の種を抽象化することです。"
+msgstr "pydiscord.pyの拡張機能の目的は、こういった苦労の種を抽象化することです。"
 
 #: ../../ext/tasks/index.rst:17
 msgid "Recipes"
 msgstr "レシピ"
 
 #: ../../ext/tasks/index.rst:19
-msgid "A simple background task in a :class:`~discord.ext.commands.Cog`:"
-msgstr ":class:`~discord.ext.commands.Cog` におけるシンプルなバックグラウンドタスク:"
+msgid "A simple background task in a :class:`~pydiscord.ext.commands.Cog`:"
+msgstr ":class:`~pydiscord.ext.commands.Cog` におけるシンプルなバックグラウンドタスク:"
 
 #: ../../ext/tasks/index.rst:38
 msgid "Adding an exception to handle during reconnect:"
@@ -198,7 +198,7 @@ msgstr "再接続中に処理する例外を追加します:"
 #: discord.ext.tasks.Loop.add_exception_type:3 of
 msgid ""
 "By default the exception types handled are those handled by "
-":meth:`discord.Client.connect`\\, which includes a lot of internet "
+":meth:`pydiscord.Client.connect`\\, which includes a lot of internet "
 "disconnection errors."
 msgstr ""
 
@@ -267,7 +267,7 @@ msgstr ""
 #: discord.ext.tasks.Loop.before_loop:3 of
 msgid ""
 "This is useful if you want to wait for some bot state before the loop "
-"starts, such as :meth:`discord.Client.wait_until_ready`."
+"starts, such as :meth:`pydiscord.Client.wait_until_ready`."
 msgstr ""
 
 #: discord.ext.tasks.Loop.after_loop:3 discord.ext.tasks.Loop.before_loop:6 of
@@ -362,7 +362,7 @@ msgstr ""
 #: discord.ext.tasks.loop:13 of
 msgid ""
 "Whether to handle errors and restart the task using an exponential back-"
-"off algorithm similar to the one used in :meth:`discord.Client.connect`."
+"off algorithm similar to the one used in :meth:`pydiscord.Client.connect`."
 msgstr ""
 
 #: discord.ext.tasks.loop:17 of

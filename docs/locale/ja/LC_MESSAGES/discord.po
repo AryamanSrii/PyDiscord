@@ -32,14 +32,14 @@ msgstr "Botのアカウント作成はとても簡単です。"
 #, fuzzy
 msgid ""
 "Make sure you're logged on to the `Discord website "
-"<https://discord.com>`_."
+"<https://pydiscord.com>`_."
 msgstr "まずは `Discordのウェブサイト <https://discordapp.com>`_ にログインしてください。"
 
 #: ../../discord.rst:11 ../../discord.rst:65
 #, fuzzy
 msgid ""
 "Navigate to the `application page "
-"<https://discord.com/developers/applications>`_"
+"<https://pydiscord.com/developers/applications>`_"
 msgstr "`アプリケーションページ <https://discordapp.com/developers/applications>`_ に移動します。"
 
 #: ../../discord.rst:12
@@ -150,7 +150,7 @@ msgstr "Botに「管理者」権限を要求させることによる影響は認
 msgid ""
 "Bot owners must have 2FA enabled for certain actions and permissions when"
 " added in servers that have Server-Wide 2FA enabled. Check the `2FA "
-"support page <https://support.discord.com/hc/en-us/articles/219576828"
+"support page <https://support.pydiscord.com/hc/en-us/articles/219576828"
 "-Setting-up-Two-Factor-Authentication>`_ for more information."
 msgstr ""
 "二段階認証が有効になっているサーバーにBotが追加された場合、Botの所有者は特定の動作と権限のために二段階認証を有効化させなければいけません。詳細は"
@@ -171,9 +171,9 @@ msgstr "Botを追加する人には「サーバー管理」権限が必要です
 #: ../../discord.rst:93
 msgid ""
 "If you want to generate this URL dynamically at run-time inside your bot "
-"and using the :class:`discord.Permissions` interface, you can use "
-":func:`discord.utils.oauth_url`."
+"and using the :class:`pydiscord.Permissions` interface, you can use "
+":func:`pydiscord.utils.oauth_url`."
 msgstr ""
-"このURLを実行時に動的に生成したい場合は、 :class:`discord.Permissions` インターフェイスから "
-":func:`discord.utils.oauth_url` を使用できます。"
+"このURLを実行時に動的に生成したい場合は、 :class:`pydiscord.Permissions` インターフェイスから "
+":func:`pydiscord.utils.oauth_url` を使用できます。"
 

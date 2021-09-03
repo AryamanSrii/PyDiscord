@@ -1,7 +1,7 @@
 import random
 
-import discord
-from discord.ext import commands
+import pydiscord
+from pydiscord.ext import commands
 
 
 class MyContext(commands.Context):
@@ -14,7 +14,7 @@ class MyContext(commands.Context):
         try:
             # this will react to the command author's message
             await self.message.add_reaction(emoji)
-        except discord.HTTPException:
+        except pydiscord.HTTPException:
             # sometimes errors occur during this, for example
             # maybe you don't have permission to do that
             # we don't mind, so we can just ignore them
@@ -30,6 +30,7 @@ class MyBot(commands.Bot):
         
 
 bot = MyBot(command_prefix='!')
+
 
 @bot.command()
 async def guess(ctx, number: int):

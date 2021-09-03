@@ -1,7 +1,8 @@
-import discord
+import pydiscord
 import asyncio
 
-class MyClient(discord.Client):
+
+class MyClient(pydiscord.Client):
     async def on_ready(self):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
         print('------')
@@ -15,6 +16,7 @@ class MyClient(discord.Client):
     async def on_message_edit(self, before, after):
         msg = f'**{before.author}** edited their message:\n{before.content} -> {after.content}'
         await before.channel.send(msg)
+
 
 client = MyClient()
 client.run('token')

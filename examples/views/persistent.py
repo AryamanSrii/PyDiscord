@@ -1,5 +1,5 @@
-from discord.ext import commands
-import discord
+from pydiscord.ext import commands
+import pydiscord
 
 
 # Define a simple View that persists between bot restarts
@@ -10,20 +10,20 @@ import discord
 # prevent conflicts with other buttons the bot sends.
 # For this example the custom_id is prefixed with the name of the bot.
 # Note that custom_ids can only be up to 100 characters long.
-class PersistentView(discord.ui.View):
+class PersistentView(pydiscord.ui.View):
     def __init__(self):
         super().__init__(timeout=None)
 
-    @discord.ui.button(label='Green', style=discord.ButtonStyle.green, custom_id='persistent_view:green')
-    async def green(self, button: discord.ui.Button, interaction: discord.Interaction):
+    @pydiscord.ui.button(label='Green', style=pydiscord.ButtonStyle.green, custom_id='persistent_view:green')
+    async def green(self, button: pydiscord.ui.Button, interaction: pydiscord.Interaction):
         await interaction.response.send_message('This is green.', ephemeral=True)
 
-    @discord.ui.button(label='Red', style=discord.ButtonStyle.red, custom_id='persistent_view:red')
-    async def red(self, button: discord.ui.Button, interaction: discord.Interaction):
+    @pydiscord.ui.button(label='Red', style=pydiscord.ButtonStyle.red, custom_id='persistent_view:red')
+    async def red(self, button: pydiscord.ui.Button, interaction: pydiscord.Interaction):
         await interaction.response.send_message('This is red.', ephemeral=True)
 
-    @discord.ui.button(label='Grey', style=discord.ButtonStyle.grey, custom_id='persistent_view:grey')
-    async def grey(self, button: discord.ui.Button, interaction: discord.Interaction):
+    @pydiscord.ui.button(label='Grey', style=pydiscord.ButtonStyle.grey, custom_id='persistent_view:grey')
+    async def grey(self, button: pydiscord.ui.Button, interaction: pydiscord.Interaction):
         await interaction.response.send_message('This is grey.', ephemeral=True)
 
 

@@ -1,8 +1,9 @@
-import discord
+import pydiscord
 import random
 import asyncio
 
-class MyClient(discord.Client):
+
+class MyClient(pydiscord.Client):
     async def on_ready(self):
         print(f'Logged in as {self.user} (ID: {self.user.id})')
         print('------')
@@ -29,6 +30,7 @@ class MyClient(discord.Client):
                 await message.channel.send('You are right!')
             else:
                 await message.channel.send(f'Oops. It is actually {answer}.')
+
 
 client = MyClient()
 client.run('token')

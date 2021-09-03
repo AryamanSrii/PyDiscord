@@ -19,7 +19,7 @@ msgid "API Reference"
 msgstr "APIリファレンス"
 
 #: ../../api.rst:6
-msgid "The following section outlines the API of discord.py."
+msgid "The following section outlines the API of pydiscord.py."
 msgstr "ここではdiscord.pyのAPIについて解説します。"
 
 #: ../../api.rst:10
@@ -28,9 +28,9 @@ msgid ""
 "in an output independent way.  If the logging module is not configured, "
 "these logs will not be output anywhere.  See :ref:`logging_setup` for "
 "more information on how to set up and use the logging module with "
-"discord.py."
+"pydiscord.py."
 msgstr ""
-"このモジュールはPythonのloggingモジュールを使用して、出力に依存しない方法でエラーや診断の内容を記録します。loggingモジュールが設定されていない場合、これらのログはどこにも出力されません。discord.pyでloggingモジュールを使用する方法の詳細は"
+"このモジュールはPythonのloggingモジュールを使用して、出力に依存しない方法でエラーや診断の内容を記録します。loggingモジュールが設定されていない場合、これらのログはどこにも出力されません。pydiscord.pyでloggingモジュールを使用する方法の詳細は"
 " :ref:`logging_setup` を参照してください。"
 
 #: ../../api.rst:17
@@ -651,7 +651,7 @@ msgstr "Optional[:class:`.ClientUser`] -- 接続しているクライアント�
 #: discord.Client.user:3 of
 #, fuzzy
 msgid "Optional[:class:`.ClientUser`]"
-msgstr ":class:`~discord.ClientUser`"
+msgstr ":class:`~pydiscord.ClientUser`"
 
 #: discord.Client.guilds:1 of
 #, fuzzy
@@ -818,10 +818,10 @@ msgstr "クライアントによって提供されるデフォルトのエラー
 msgid ""
 "By default this prints to :data:`sys.stderr` however it could be "
 "overridden to have a different implementation. Check "
-":func:`~discord.on_error` for more details."
+":func:`~pydiscord.on_error` for more details."
 msgstr ""
 "デフォルトでは、これは :data:`sys.stderr` に出力されますが、異なる実装によって上書きされる可能性があります。詳細については "
-":func:`~discord.on_error` を確認してください。"
+":func:`~pydiscord.on_error` を確認してください。"
 
 #: discord.Client.request_offline_members:3 of
 msgid ""
@@ -976,7 +976,7 @@ msgstr "この関数は、異なる二通りの方法で使用することがで
 #, fuzzy
 msgid ""
 "Logging on with a user token is against the Discord `Terms of Service "
-"<https://support.discord.com/hc/en-us/articles/115002192352>`_ and doing "
+"<https://support.pydiscord.com/hc/en-us/articles/115002192352>`_ and doing "
 "so might potentially get your account banned. Use this at your own risk."
 msgstr ""
 "ユーザートークンを用いてのログインはDiscordの `利用規約 <https://support.discordapp.com/hc/en-"
@@ -1122,8 +1122,8 @@ msgstr ""
 
 #: discord.Client.allowed_mentions:5 of
 #, fuzzy
-msgid "Optional[:class:`~discord.AllowedMentions`]"
-msgstr ":class:`~discord.ClientUser`"
+msgid "Optional[:class:`~pydiscord.AllowedMentions`]"
+msgstr ":class:`~pydiscord.ClientUser`"
 
 #: discord.Client.intents:1 of
 msgid "The intents configured for this connection."
@@ -1137,12 +1137,12 @@ msgstr ":class:`bytes`"
 #: discord.Client.users:1 of
 #, fuzzy
 msgid "Returns a list of all the users the bot can see."
-msgstr "List[:class:`~discord.User`] -- ボットが見ることができるすべてのユーザーのリストを返します。"
+msgstr "List[:class:`~pydiscord.User`] -- ボットが見ることができるすべてのユーザーのリストを返します。"
 
 #: discord.Client.users:3 of
 #, fuzzy
-msgid "List[:class:`~discord.User`]"
-msgstr ":class:`~discord.User`"
+msgid "List[:class:`~pydiscord.User`]"
+msgstr ":class:`~pydiscord.User`"
 
 #: discord.Client.get_channel:1 discord.Guild.get_channel:1 of
 #, fuzzy
@@ -1333,7 +1333,7 @@ msgstr ":class:`.Guild`"
 #: discord.Client.get_user:1 of
 #, fuzzy
 msgid "Returns a user with the given ID."
-msgstr "Optional[:class:`~discord.User`]: 与えられたIDを持つユーザーを返します。"
+msgstr "Optional[:class:`~pydiscord.User`]: 与えられたIDを持つユーザーを返します。"
 
 #: discord.Client.get_user:6 of
 msgid "The user or ``None`` if not found."
@@ -1341,8 +1341,8 @@ msgstr ""
 
 #: discord.Client.get_user:7 of
 #, fuzzy
-msgid "Optional[:class:`~discord.User`]"
-msgstr ":class:`~discord.User`"
+msgid "Optional[:class:`~pydiscord.User`]"
+msgstr ":class:`~pydiscord.User`"
 
 #: discord.Client.get_emoji:1 of
 #, fuzzy
@@ -1429,11 +1429,11 @@ msgstr ""
 msgid ""
 "In case the event returns multiple arguments, a :class:`tuple` containing"
 " those arguments is returned instead. Please check the "
-":ref:`documentation <discord-api-events>` for a list of events and their "
+":ref:`documentation <pydiscord-api-events>` for a list of events and their "
 "parameters."
 msgstr ""
 "イベントが複数の引数を返す場合は、それらを含む :class:`tuple` が代わりに返ります。イベントとそのパラメーターについては "
-":ref:`ドキュメント <discord-api-events>` を参照してください。"
+":ref:`ドキュメント <pydiscord-api-events>` を参照してください。"
 
 #: discord.Client.wait_for:19 of
 msgid "This function returns the **first event that meets the requirements**."
@@ -1462,10 +1462,10 @@ msgstr "メッセージ送信者がサムズアップリアクションを付け
 
 #: discord.Client.wait_for:55 of
 msgid ""
-"The event name, similar to the :ref:`event reference <discord-api-"
+"The event name, similar to the :ref:`event reference <pydiscord-api-"
 "events>`, but without the ``on_`` prefix, to wait for."
 msgstr ""
-"イベント名は :ref:`イベントリファレンス <discord-api-events>` に似ていますが接頭詞の ``on_`` "
+"イベント名は :ref:`イベントリファレンス <pydiscord-api-events>` に似ていますが接頭詞の ``on_`` "
 "が必要ありません。"
 
 #: discord.Client.wait_for:58 of
@@ -1489,9 +1489,9 @@ msgstr ":exc:`asyncio.TimeoutError` -- タイムアウト値が設定されて�
 msgid ""
 "Returns no arguments, a single argument, or a :class:`tuple` of multiple "
 "arguments that mirrors the parameters passed in the :ref:`event reference"
-" <discord-api-events>`."
+" <pydiscord-api-events>`."
 msgstr ""
-"単一の引数、あるいは :ref:`イベントリファレンス <discord-api-events>` のパラメータを反映した複数の引数の値を含む "
+"単一の引数、あるいは :ref:`イベントリファレンス <pydiscord-api-events>` のパラメータを反映した複数の引数の値を含む "
 ":class:`tuple` が返ります。返る引数がない場合もあります。"
 
 #: discord.Client.event:1 of
@@ -1501,8 +1501,8 @@ msgstr "リッスンするイベントを登録するデコレータ。"
 #: discord.Client.event:3 of
 msgid ""
 "You can find more info about the events on the :ref:`documentation below "
-"<discord-api-events>`."
-msgstr "イベントの詳細については :ref:`以下のドキュメント <discord-api-events>` を参照してください。"
+"<pydiscord-api-events>`."
+msgstr "イベントの詳細については :ref:`以下のドキュメント <pydiscord-api-events>` を参照してください。"
 
 #: discord.Client.event:5 of
 msgid ""
@@ -1538,7 +1538,7 @@ msgstr "変更するステータスを示します。 ``None`` の場合、:attr
 #: discord.AutoShardedClient.change_presence:15
 #: discord.Client.change_presence:17 of
 msgid ""
-"Indicates if you are going AFK. This allows the discord client to know "
+"Indicates if you are going AFK. This allows the pydiscord client to know "
 "how to handle push notifications better for you in case you are actually "
 "idle and not lying."
 msgstr "AFKの状態にするかを示します。これによって、実際に退席中の場合に、Discordクライアントにプッシュ通知をよりよく扱わせることができます。"
@@ -1624,13 +1624,13 @@ msgstr ":class:`.Guild` -- データを解析したGuild。"
 
 #: discord.Client.fetch_template:3 of
 #, fuzzy
-msgid "Gets a :class:`.Template` from a discord.new URL or code."
+msgid "Gets a :class:`.Template` from a pydiscord.new URL or code."
 msgstr ":class:`.Invite` をdiscord.gg URLやIDから取得します。"
 
 #: discord.Client.fetch_template:5 of
 #, fuzzy
-msgid "The Discord Template Code or URL (must be a discord.new URL)."
-msgstr "Discordの招待ID、またはURL（discord.gg URLである必要があります）。"
+msgid "The Discord Template Code or URL (must be a pydiscord.new URL)."
+msgstr "Discordの招待ID、またはURL（pydiscord.gg URLである必要があります）。"
 
 #: discord.Client.fetch_template:8 of
 #, fuzzy
@@ -1744,7 +1744,7 @@ msgid "The guild created. This is not the same guild that is added to cache."
 msgstr "作成されたギルド。キャッシュに追加されるギルドとは別物です。"
 
 #: discord.Client.fetch_invite:3 of
-msgid "Gets an :class:`.Invite` from a discord.gg URL or ID."
+msgid "Gets an :class:`.Invite` from a pydiscord.gg URL or ID."
 msgstr ":class:`.Invite` をdiscord.gg URLやIDから取得します。"
 
 #: discord.Client.fetch_invite:7 of
@@ -1759,8 +1759,8 @@ msgstr ""
 ":class:`.PartialInviteGuild` と :class:`PartialInviteChannel` になります。"
 
 #: discord.Client.fetch_invite:11 of
-msgid "The Discord invite ID or URL (must be a discord.gg URL)."
-msgstr "Discordの招待ID、またはURL（discord.gg URLである必要があります）。"
+msgid "The Discord invite ID or URL (must be a pydiscord.gg URL)."
+msgstr "Discordの招待ID、またはURL（pydiscord.gg URLである必要があります）。"
 
 #: discord.Client.fetch_invite:13 of
 msgid ""
@@ -1867,11 +1867,11 @@ msgstr ":class:`.AppInfo`"
 
 #: discord.Client.fetch_user:3 of
 msgid ""
-"Retrieves a :class:`~discord.User` based on their ID. This can only be "
+"Retrieves a :class:`~pydiscord.User` based on their ID. This can only be "
 "used by bot accounts. You do not have to share any guilds with the user "
 "to get this information, however many operations do require that you do."
 msgstr ""
-"IDをもとに :class:`~discord.User` "
+"IDをもとに :class:`~pydiscord.User` "
 "を取得します。Botアカウントでのみ使用できます。そのユーザーとギルドを共有する必要はありませんが、操作の多くはそれを必要とします。"
 
 #: discord.Client.fetch_user:10 of
@@ -1899,8 +1899,8 @@ msgid "The user you requested."
 msgstr "あなたがリクエストしたユーザー。"
 
 #: discord.Client.fetch_user:19 discord.abc.Messageable:8 discord.abc.User:5 of
-msgid ":class:`~discord.User`"
-msgstr ":class:`~discord.User`"
+msgid ":class:`~pydiscord.User`"
+msgstr ":class:`~pydiscord.User`"
 
 #: discord.Client.fetch_user_profile:3 of
 msgid "Gets an arbitrary user's profile."
@@ -2633,7 +2633,7 @@ msgstr ":class:`ClientUser` -- ボイスチャンネルに接続しているユ�
 #: discord.DMChannel:31 discord.GroupChannel:31 discord.VoiceClient.user:3 of
 #, fuzzy
 msgid ":class:`ClientUser`"
-msgstr ":class:`~discord.ClientUser`"
+msgstr ":class:`~pydiscord.ClientUser`"
 
 #: discord.VoiceClient.on_voice_state_update:3
 #: discord.VoiceProtocol.on_voice_state_update:3 of
@@ -2646,7 +2646,7 @@ msgstr ""
 #: discord.VoiceProtocol.on_voice_state_update:6 of
 msgid ""
 "The raw `voice state payload`__.  .. _voice_state_update_payload: "
-"https://discord.com/developers/docs/resources/voice#voice-state-object  "
+"https://pydiscord.com/developers/docs/resources/voice#voice-state-object  "
 "__ voice_state_update_payload_"
 msgstr ""
 
@@ -2668,7 +2668,7 @@ msgstr ""
 msgid ""
 "The raw `voice server update payload`__.  .. "
 "_voice_server_update_payload: "
-"https://discord.com/developers/docs/topics/gateway#voice-server-update-"
+"https://pydiscord.com/developers/docs/topics/gateway#voice-server-update-"
 "voice-server-update-event-fields  __ voice_server_update_payload_"
 msgstr ""
 
@@ -3775,7 +3775,7 @@ msgstr ""
 msgid ""
 "Due to the inherently raw nature of this event, the data parameter "
 "coincides with the raw data given by the `gateway "
-"<https://discord.com/developers/docs/topics/gateway#message-update>`_."
+"<https://pydiscord.com/developers/docs/topics/gateway#message-update>`_."
 msgstr ""
 "このイベントの性質は、本質的に生表現のため、データのパラメータは `ゲートウェイ "
 "<https://discordapp.com/developers/docs/topics/gateway#message-update>`_ "
@@ -4366,10 +4366,10 @@ msgstr "与えられた関数を満たす最初の要素を返すヘルパー。
 
 #: discord.utils.find:6 of
 msgid ""
-"would find the first :class:`~discord.Member` whose name is 'Mighty' and "
+"would find the first :class:`~pydiscord.Member` whose name is 'Mighty' and "
 "return it. If an entry is not found, then ``None`` is returned."
 msgstr ""
-"は、名前が'Mighty'である最初に見つかった :class:`~discord.Member` を返します。見つからない場合は "
+"は、名前が'Mighty'である最初に見つかった :class:`~pydiscord.Member` を返します。見つからない場合は "
 "``None`` を返します。"
 
 #: discord.utils.find:9 of
@@ -4390,8 +4390,8 @@ msgstr "検索するイテラブル。"
 msgid ""
 "A helper that returns the first element in the iterable that meets all "
 "the traits passed in ``attrs``. This is an alternative for "
-":func:`~discord.utils.find`."
-msgstr "``attrs`` に渡されたすべての条件を満たす最初の要素を返すヘルパー。 :func:`~discord.utils.find` の代替案です。"
+":func:`~pydiscord.utils.find`."
+msgstr "``attrs`` に渡されたすべての条件を満たす最初の要素を返すヘルパー。 :func:`~pydiscord.utils.find` の代替案です。"
 
 #: discord.utils.get:5 of
 msgid ""
@@ -4532,7 +4532,7 @@ msgstr "チャンネルのメンションはエスケープしません。"
 #: discord.utils.escape_mentions:9 of
 msgid ""
 "For more granular control over what mentions should be escaped within "
-"messages, refer to the :class:`~discord.AllowedMentions` class."
+"messages, refer to the :class:`~pydiscord.AllowedMentions` class."
 msgstr ""
 
 #: discord.utils.escape_mentions:13 of
@@ -4545,8 +4545,8 @@ msgstr "メンションが削除されたテキスト。"
 
 #: discord.utils.resolve_invite:1 of
 #, fuzzy
-msgid "Resolves an invite from a :class:`~discord.Invite`, URL or code."
-msgstr ":class:`~discord.Invite` やURL、IDから招待を解決します"
+msgid "Resolves an invite from a :class:`~pydiscord.Invite`, URL or code."
+msgstr ":class:`~pydiscord.Invite` やURL、IDから招待を解決します"
 
 #: discord.utils.resolve_invite:3 of
 msgid "The invite."
@@ -4558,8 +4558,8 @@ msgstr "招待コード。"
 
 #: discord.utils.resolve_template:1 of
 #, fuzzy
-msgid "Resolves a template code from a :class:`~discord.Template`, URL or code."
-msgstr ":class:`~discord.Invite` やURL、IDから招待を解決します"
+msgid "Resolves a template code from a :class:`~pydiscord.Template`, URL or code."
+msgstr ":class:`~pydiscord.Invite` やURL、IDから招待を解決します"
 
 #: discord.utils.resolve_template:5 of
 #, fuzzy
@@ -6727,7 +6727,7 @@ msgstr "Webhookサポート"
 
 #: ../../api.rst:2505
 msgid ""
-"discord.py offers support for creating, editing, and executing webhooks "
+"pydiscord.py offers support for creating, editing, and executing webhooks "
 "through the :class:`Webhook` class."
 msgstr ""
 
@@ -7343,16 +7343,16 @@ msgid "The following implement this ABC:"
 msgstr ""
 
 #: discord.abc.PrivateChannel:14 discord.abc.User:6 of
-msgid ":class:`~discord.ClientUser`"
-msgstr ":class:`~discord.ClientUser`"
+msgid ":class:`~pydiscord.ClientUser`"
+msgstr ":class:`~pydiscord.ClientUser`"
 
 #: discord.abc.Messageable:9 discord.abc.User:7 of
-msgid ":class:`~discord.Member`"
+msgid ":class:`~pydiscord.Member`"
 msgstr ""
 
 #: discord.abc.GuildChannel:9 discord.abc.PrivateChannel:8 discord.abc.User:9
 #: of
-msgid "This ABC must also implement :class:`~discord.abc.Snowflake`."
+msgid "This ABC must also implement :class:`~pydiscord.abc.Snowflake`."
 msgstr ""
 
 #: discord.ClientUser:23 discord.User:23 discord.abc.User:13 of
@@ -7391,33 +7391,33 @@ msgid "An ABC that details the common operations on a private Discord channel."
 msgstr ""
 
 #: discord.abc.Messageable:6 discord.abc.PrivateChannel:5 of
-msgid ":class:`~discord.DMChannel`"
+msgid ":class:`~pydiscord.DMChannel`"
 msgstr ""
 
 #: discord.abc.Messageable:7 discord.abc.PrivateChannel:6 of
-msgid ":class:`~discord.GroupChannel`"
+msgid ":class:`~pydiscord.GroupChannel`"
 msgstr ""
 
 #: discord.DMChannel:29 discord.GroupChannel:29 discord.abc.PrivateChannel:12
 #: of
 #, fuzzy
 msgid "The user presenting yourself."
-msgstr ":class:`~discord.ClientUser` -- ユーザー自分自身。"
+msgstr ":class:`~pydiscord.ClientUser` -- ユーザー自分自身。"
 
 #: discord.abc.GuildChannel:1 of
 msgid "An ABC that details the common operations on a Discord guild channel."
 msgstr ""
 
 #: discord.abc.GuildChannel:5 discord.abc.Messageable:5 of
-msgid ":class:`~discord.TextChannel`"
+msgid ":class:`~pydiscord.TextChannel`"
 msgstr ""
 
 #: discord.abc.Connectable:6 discord.abc.GuildChannel:6 of
-msgid ":class:`~discord.VoiceChannel`"
+msgid ":class:`~pydiscord.VoiceChannel`"
 msgstr ""
 
 #: discord.abc.GuildChannel:7 of
-msgid ":class:`~discord.CategoryChannel`"
+msgid ":class:`~pydiscord.CategoryChannel`"
 msgstr ""
 
 #: discord.TextChannel:23 discord.VoiceChannel:23 discord.abc.GuildChannel:13
@@ -7434,8 +7434,8 @@ msgstr "ギルドのストアチャンネル。"
 
 #: discord.abc.GuildChannel:21 of
 #, fuzzy
-msgid ":class:`~discord.Guild`"
-msgstr ":class:`~discord.User`"
+msgid ":class:`~pydiscord.Guild`"
+msgstr ":class:`~pydiscord.User`"
 
 #: discord.Guild.create_text_channel:47 discord.TextChannel:53
 #: discord.VoiceChannel:47 discord.abc.GuildChannel:25 of
@@ -7449,15 +7449,15 @@ msgstr ""
 #: discord.abc.GuildChannel.changed_roles:1 of
 msgid ""
 "Returns a list of roles that have been overridden from their default "
-"values in the :attr:`~discord.Guild.roles` attribute."
+"values in the :attr:`~pydiscord.Guild.roles` attribute."
 msgstr ""
 
 #: discord.CategoryChannel.changed_roles:4 discord.TextChannel.changed_roles:4
 #: discord.VoiceChannel.changed_roles:4
 #: discord.abc.GuildChannel.changed_roles:4 of
 #, fuzzy
-msgid "List[:class:`~discord.Role`]"
-msgstr ":class:`~discord.User`"
+msgid "List[:class:`~pydiscord.Role`]"
+msgstr ":class:`~pydiscord.User`"
 
 #: discord.CategoryChannel.mention:1 discord.PartialInviteChannel.mention:1
 #: discord.TextChannel.mention:1 discord.VoiceChannel.mention:1
@@ -7493,7 +7493,7 @@ msgstr ""
 #: discord.CategoryChannel.overwrites_for:8
 #: discord.TextChannel.overwrites_for:8 discord.VoiceChannel.overwrites_for:8
 #: discord.abc.GuildChannel.overwrites_for:8 of
-msgid ":class:`~discord.PermissionOverwrite`"
+msgid ":class:`~pydiscord.PermissionOverwrite`"
 msgstr ""
 
 #: discord.CategoryChannel.overwrites:1 discord.TextChannel.overwrites:1
@@ -7505,8 +7505,8 @@ msgstr ""
 #: discord.VoiceChannel.overwrites:3 discord.abc.GuildChannel.overwrites:3 of
 msgid ""
 "This is returned as a dictionary where the key contains the target which "
-"can be either a :class:`~discord.Role` or a :class:`~discord.Member` and "
-"the value is the overwrite as a :class:`~discord.PermissionOverwrite`."
+"can be either a :class:`~pydiscord.Role` or a :class:`~pydiscord.Member` and "
+"the value is the overwrite as a :class:`~pydiscord.PermissionOverwrite`."
 msgstr ""
 
 #: discord.CategoryChannel.overwrites:7 discord.TextChannel.overwrites:7
@@ -7517,8 +7517,8 @@ msgstr ""
 #: discord.CategoryChannel.overwrites:8 discord.TextChannel.overwrites:8
 #: discord.VoiceChannel.overwrites:8 discord.abc.GuildChannel.overwrites:8 of
 msgid ""
-"Mapping[Union[:class:`~discord.Role`, :class:`~discord.Member`], "
-":class:`~discord.PermissionOverwrite`]"
+"Mapping[Union[:class:`~pydiscord.Role`, :class:`~pydiscord.Member`], "
+":class:`~pydiscord.PermissionOverwrite`]"
 msgstr ""
 
 #: discord.CategoryChannel.category:1 discord.TextChannel.category:1
@@ -7534,8 +7534,8 @@ msgstr ""
 #: discord.CategoryChannel.category:5 discord.TextChannel.category:5
 #: discord.VoiceChannel.category:5 discord.abc.GuildChannel.category:5 of
 #, fuzzy
-msgid "Optional[:class:`~discord.CategoryChannel`]"
-msgstr ":class:`~discord.User`"
+msgid "Optional[:class:`~pydiscord.CategoryChannel`]"
+msgstr ":class:`~pydiscord.User`"
 
 #: discord.CategoryChannel.permissions_synced:1
 #: discord.TextChannel.permissions_synced:1
@@ -7556,7 +7556,7 @@ msgstr ""
 #: discord.CategoryChannel.permissions_for:1
 #: discord.TextChannel.permissions_for:1 discord.VoiceChannel.permissions_for:1
 #: discord.abc.GuildChannel.permissions_for:1 of
-msgid "Handles permission resolution for the current :class:`~discord.Member`."
+msgid "Handles permission resolution for the current :class:`~pydiscord.Member`."
 msgstr ""
 
 #: discord.CategoryChannel.permissions_for:3
@@ -7607,7 +7607,7 @@ msgstr ""
 #: discord.TextChannel.permissions_for:14
 #: discord.VoiceChannel.permissions_for:14
 #: discord.abc.GuildChannel.permissions_for:14 of
-msgid ":class:`~discord.Permissions`"
+msgid ":class:`~pydiscord.Permissions`"
 msgstr ""
 
 #: discord.CategoryChannel.delete:3 discord.TextChannel.delete:3
@@ -7656,8 +7656,8 @@ msgstr ""
 #: discord.TextChannel.set_permissions:6 discord.VoiceChannel.set_permissions:6
 #: discord.abc.GuildChannel.set_permissions:6 of
 msgid ""
-"The ``target`` parameter should either be a :class:`~discord.Member` or a"
-" :class:`~discord.Role` that belongs to guild."
+"The ``target`` parameter should either be a :class:`~pydiscord.Member` or a"
+" :class:`~pydiscord.Role` that belongs to guild."
 msgstr ""
 
 #: discord.CategoryChannel.set_permissions:9
@@ -7665,8 +7665,8 @@ msgstr ""
 #: discord.abc.GuildChannel.set_permissions:9 of
 msgid ""
 "The ``overwrite`` parameter, if given, must either be ``None`` or "
-":class:`~discord.PermissionOverwrite`. For convenience, you can pass in "
-"keyword arguments denoting :class:`~discord.Permissions` attributes. If "
+":class:`~pydiscord.PermissionOverwrite`. For convenience, you can pass in "
+"keyword arguments denoting :class:`~pydiscord.Permissions` attributes. If "
 "this is done, then you cannot mix the keyword arguments with the "
 "``overwrite`` parameter."
 msgstr ""
@@ -7708,7 +7708,7 @@ msgstr ""
 #: discord.TextChannel.set_permissions:31
 #: discord.VoiceChannel.set_permissions:31
 #: discord.abc.GuildChannel.set_permissions:31 of
-msgid "Using :class:`~discord.PermissionOverwrite` ::"
+msgid "Using :class:`~pydiscord.PermissionOverwrite` ::"
 msgstr ""
 
 #: discord.CategoryChannel.set_permissions:38
@@ -7772,7 +7772,7 @@ msgstr ""
 #: discord.abc.GuildChannel.set_permissions:51 of
 msgid ""
 "The overwrite parameter invalid or the target type was not     "
-":class:`~discord.Role` or :class:`~discord.Member`."
+":class:`~pydiscord.Role` or :class:`~pydiscord.Member`."
 msgstr ""
 
 #: discord.CategoryChannel.clone:3 discord.TextChannel.clone:3
@@ -7786,7 +7786,7 @@ msgstr ""
 #: discord.VoiceChannel.clone:6 discord.abc.GuildChannel.clone:6 of
 #, fuzzy
 msgid ""
-"You must have the :attr:`~discord.Permissions.manage_channels` permission"
+"You must have the :attr:`~pydiscord.Permissions.manage_channels` permission"
 " to do this."
 msgstr "これを行うには、関連付けられたGuildにて、 :attr:`~.Permissions.manage_channels` 権限が必要です。"
 
@@ -7896,7 +7896,7 @@ msgstr "招待の作成。"
 #: discord.CategoryChannel.create_invite:27
 #: discord.TextChannel.create_invite:27 discord.VoiceChannel.create_invite:27
 #: discord.abc.GuildChannel.create_invite:27 of
-msgid ":class:`~discord.Invite`"
+msgid ":class:`~pydiscord.Invite`"
 msgstr ""
 
 #: discord.CategoryChannel.invites:3 discord.TextChannel.invites:3
@@ -7933,7 +7933,7 @@ msgstr ""
 
 #: discord.CategoryChannel.invites:11 discord.TextChannel.invites:11
 #: discord.VoiceChannel.invites:11 discord.abc.GuildChannel.invites:11 of
-msgid "List[:class:`~discord.Invite`]"
+msgid "List[:class:`~pydiscord.Invite`]"
 msgstr ""
 
 #: discord.abc.Messageable:1 of
@@ -7943,14 +7943,14 @@ msgid ""
 msgstr ""
 
 #: discord.abc.Messageable:10 of
-msgid ":class:`~discord.ext.commands.Context`"
+msgid ":class:`~pydiscord.ext.commands.Context`"
 msgstr ""
 
 #: discord.DMChannel.history:1 discord.GroupChannel.history:1
 #: discord.Member.history:1 discord.TextChannel.history:1
 #: discord.User.history:1 discord.abc.Messageable.history:1 of
 msgid ""
-"Returns an :class:`~discord.AsyncIterator` that enables receiving the "
+"Returns an :class:`~pydiscord.AsyncIterator` that enables receiving the "
 "destination's message history."
 msgstr ""
 
@@ -8028,7 +8028,7 @@ msgstr ""
 #: discord.DMChannel.history:43 discord.GroupChannel.history:43
 #: discord.Member.history:43 discord.TextChannel.history:43
 #: discord.User.history:43 discord.abc.Messageable.history:43 of
-msgid ":class:`~discord.Message` -- The message with the message data parsed."
+msgid ":class:`~pydiscord.Message` -- The message with the message data parsed."
 msgstr ""
 
 #: discord.DMChannel.typing:1 discord.GroupChannel.typing:1
@@ -8079,9 +8079,9 @@ msgstr ""
 #: discord.abc.Messageable.send:9 of
 msgid ""
 "To upload a single file, the ``file`` parameter should be used with a "
-"single :class:`~discord.File` object. To upload multiple files, the "
+"single :class:`~pydiscord.File` object. To upload multiple files, the "
 "``files`` parameter should be used with a :class:`list` of "
-":class:`~discord.File` objects. **Specifying both parameters will lead to"
+":class:`~pydiscord.File` objects. **Specifying both parameters will lead to"
 " an exception**."
 msgstr ""
 
@@ -8090,7 +8090,7 @@ msgstr ""
 #: discord.abc.Messageable.send:14 of
 msgid ""
 "If the ``embed`` parameter is provided, it must be of type "
-":class:`~discord.Embed` and it must be a rich embed type."
+":class:`~pydiscord.Embed` and it must be a rich embed type."
 msgstr ""
 
 #: discord.DMChannel.send:21 discord.GroupChannel.send:21
@@ -8133,11 +8133,11 @@ msgstr ""
 #: discord.abc.Messageable.send:34 of
 msgid ""
 "Controls the mentions being processed in this message. If this is passed,"
-" then the object is merged with :attr:`~discord.Client.allowed_mentions`."
+" then the object is merged with :attr:`~pydiscord.Client.allowed_mentions`."
 " The merging behaviour only overrides attributes that have been "
 "explicitly passed to the object, otherwise it uses the attributes set in "
-":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
-"then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
+":attr:`~pydiscord.Client.allowed_mentions`. If no object is passed at all "
+"then the defaults given by :attr:`~pydiscord.Client.allowed_mentions` are "
 "used instead.  .. versionadded:: 1.4"
 msgstr ""
 
@@ -8146,11 +8146,11 @@ msgstr ""
 #: discord.abc.Messageable.send:34 of
 msgid ""
 "Controls the mentions being processed in this message. If this is passed,"
-" then the object is merged with :attr:`~discord.Client.allowed_mentions`."
+" then the object is merged with :attr:`~pydiscord.Client.allowed_mentions`."
 " The merging behaviour only overrides attributes that have been "
 "explicitly passed to the object, otherwise it uses the attributes set in "
-":attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
-"then the defaults given by :attr:`~discord.Client.allowed_mentions` are "
+":attr:`~pydiscord.Client.allowed_mentions`. If no object is passed at all "
+"then the defaults given by :attr:`~pydiscord.Client.allowed_mentions` are "
 "used instead."
 msgstr ""
 
@@ -8174,7 +8174,7 @@ msgstr ""
 #: discord.TextChannel.fetch_message:15 discord.TextChannel.send:49
 #: discord.User.fetch_message:15 discord.User.send:49
 #: discord.abc.Messageable.fetch_message:15 discord.abc.Messageable.send:49 of
-msgid ":class:`~discord.Message`"
+msgid ":class:`~pydiscord.Message`"
 msgstr ""
 
 #: discord.DMChannel.trigger_typing:3 discord.GroupChannel.trigger_typing:3
@@ -8194,7 +8194,7 @@ msgstr ""
 #: discord.DMChannel.fetch_message:3 discord.GroupChannel.fetch_message:3
 #: discord.Member.fetch_message:3 discord.TextChannel.fetch_message:3
 #: discord.User.fetch_message:3 discord.abc.Messageable.fetch_message:3 of
-msgid "Retrieves a single :class:`~discord.Message` from the destination."
+msgid "Retrieves a single :class:`~pydiscord.Message` from the destination."
 msgstr ""
 
 #: discord.DMChannel.fetch_message:5 discord.GroupChannel.fetch_message:5
@@ -8263,7 +8263,7 @@ msgstr ""
 #: discord.DMChannel.pins:14 discord.GroupChannel.pins:14
 #: discord.Member.pins:14 discord.TextChannel.pins:14 discord.User.pins:14
 #: discord.abc.Messageable.pins:14 of
-msgid "List[:class:`~discord.Message`]"
+msgid "List[:class:`~pydiscord.Message`]"
 msgstr ""
 
 #: discord.abc.Connectable:1 of
@@ -8301,10 +8301,10 @@ msgid ""
 "If you want to get one of these model classes instances they'd have to be"
 " through the cache, and a common way of doing so is through the "
 ":func:`utils.find` function or attributes of model classes that you "
-"receive from the events specified in the :ref:`discord-api-events`."
+"receive from the events specified in the :ref:`pydiscord-api-events`."
 msgstr ""
 "このようなモデルクラスのインスタンスを取得したい場合は、 キャッシュを経由して取得する必要があります。一般的な方法としては "
-":func:`utils.find` 関数を用いるか、 :ref:`discord-api-events` "
+":func:`utils.find` 関数を用いるか、 :ref:`pydiscord-api-events` "
 "の特定のイベントから受け取る方法が挙げられます。"
 
 #: ../../api.rst:2585 ../../api.rst:2870
@@ -9241,7 +9241,7 @@ msgstr ""
 #: discord.Message:7 of
 msgid ""
 "Specifies if the message was done with text-to-speech. This can only be "
-"accurately received in :func:`on_message` due to a discord limitation."
+"accurately received in :func:`on_message` due to a pydiscord limitation."
 msgstr ""
 
 #: discord.Message:15 of
@@ -9270,7 +9270,7 @@ msgstr "更新後のメッセージ。"
 
 #: discord.Message:35 of
 msgid ""
-"The value used by the discord guild and the client to verify that the "
+"The value used by the pydiscord guild and the client to verify that the "
 "message is successfully sent. This is typically non-important."
 msgstr ""
 
@@ -9339,7 +9339,7 @@ msgstr ""
 #: discord.Message:89 of
 msgid ""
 "The order of the mentions list is not in any particular order so you "
-"should not rely on it. This is a discord limitation, not one with the "
+"should not rely on it. This is a pydiscord limitation, not one with the "
 "library."
 msgstr ""
 
@@ -10237,8 +10237,8 @@ msgstr ""
 
 #: discord.Guild:149 of
 msgid ""
-"``VANITY_URL``: Guild can have a vanity invite URL (e.g. discord.gg"
-"/discord-api)"
+"``VANITY_URL``: Guild can have a vanity invite URL (e.g. pydiscord.gg"
+"/pydiscord-api)"
 msgstr ""
 
 #: discord.Guild:150 of
@@ -12493,7 +12493,7 @@ msgid ""
 msgstr ""
 
 #: discord.Emoji:27 discord.PartialEmoji:24 of
-msgid "Returns the emoji rendered for discord."
+msgid "Returns the emoji rendered for pydiscord."
 msgstr ""
 
 #: discord.Emoji:31 of
@@ -13296,8 +13296,8 @@ msgstr ""
 
 #: discord.VoiceChannel.connect:12 of
 msgid ""
-"A type that subclasses :class:`~discord.VoiceProtocol` to connect with. "
-"Defaults to :class:`~discord.VoiceClient`."
+"A type that subclasses :class:`~pydiscord.VoiceProtocol` to connect with. "
+"Defaults to :class:`~pydiscord.VoiceClient`."
 msgstr ""
 
 #: discord.VoiceChannel.connect:16 of
@@ -13321,8 +13321,8 @@ msgstr ""
 
 #: discord.VoiceChannel.connect:21 of
 #, fuzzy
-msgid ":class:`~discord.VoiceProtocol`"
-msgstr ":class:`~discord.User`"
+msgid ":class:`~pydiscord.VoiceProtocol`"
+msgstr ":class:`~pydiscord.User`"
 
 #: ../../api.rst:2741
 msgid "CategoryChannel"
@@ -14238,7 +14238,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "The raw data given by the `gateway "
-"<https://discord.com/developers/docs/topics/gateway#message-update>`_"
+"<https://pydiscord.com/developers/docs/topics/gateway#message-update>`_"
 msgstr ""
 "このイベントの性質は、本質的に生表現のため、データのパラメータは `ゲートウェイ "
 "<https://discordapp.com/developers/docs/topics/gateway#message-update>`_ "
@@ -16700,7 +16700,7 @@ msgid "The following exceptions are thrown by the library."
 msgstr ""
 
 #: discord.DiscordException:1 of
-msgid "Base exception class for discord.py"
+msgid "Base exception class for pydiscord.py"
 msgstr ""
 
 #: discord.DiscordException:3 of
@@ -16743,7 +16743,7 @@ msgstr ""
 #: discord.HTTPException:9 of
 #, fuzzy
 msgid ":class:`aiohttp.ClientResponse`"
-msgstr ":class:`~discord.ClientUser`"
+msgstr ":class:`~pydiscord.ClientUser`"
 
 #: discord.HTTPException:13 of
 msgid "The text of the error. Could be an empty string."
@@ -16830,7 +16830,7 @@ msgstr ""
 
 #: discord.PrivilegedIntentsRequired:4 of
 msgid ""
-"Go to https://discord.com/developers/applications/ and enable the intents"
+"Go to https://pydiscord.com/developers/applications/ and enable the intents"
 " that are required. Currently these are as follows:"
 msgstr ""
 
@@ -16915,7 +16915,7 @@ msgstr ""
 #: ../../api.rst:3040
 #, fuzzy
 msgid ":exc:`DiscordServerError`"
-msgstr ":class:`~discord.User`"
+msgstr ":class:`~pydiscord.User`"
 
 #~ msgid ""
 #~ "Indicates if :func:`.on_ready` should be "
@@ -17338,7 +17338,7 @@ msgstr ":class:`~discord.User`"
 #~ msgid ":class:`str` -- The channel name."
 #~ msgstr ""
 
-#~ msgid ":class:`~discord.Guild` -- The guild the channel belongs to."
+#~ msgid ":class:`~pydiscord.Guild` -- The guild the channel belongs to."
 #~ msgstr ""
 
 #~ msgid ""
@@ -17349,10 +17349,10 @@ msgstr ":class:`~discord.User`"
 #~ msgstr ""
 
 #~ msgid ""
-#~ "List[:class:`~discord.Role`] -- Returns a list"
+#~ "List[:class:`~pydiscord.Role`] -- Returns a list"
 #~ " of roles that have been overridden"
 #~ " from their default values in the "
-#~ ":attr:`~discord.Guild.roles` attribute."
+#~ ":attr:`~pydiscord.Guild.roles` attribute."
 #~ msgstr ""
 
 #~ msgid ":class:`str` -- The string that allows you to mention the channel."
@@ -17367,23 +17367,23 @@ msgstr ":class:`~discord.User`"
 #~ "This is returned as a dictionary "
 #~ "where the key contains the target "
 #~ "which can be either a "
-#~ ":class:`~discord.Role` or a :class:`~discord.Member`"
+#~ ":class:`~pydiscord.Role` or a :class:`~pydiscord.Member`"
 #~ " and the key is the overwrite "
-#~ "as a :class:`~discord.PermissionOverwrite`."
+#~ "as a :class:`~pydiscord.PermissionOverwrite`."
 #~ msgstr ""
 
 #~ msgid ""
-#~ "Optional[:class:`~discord.CategoryChannel`] -- The "
+#~ "Optional[:class:`~pydiscord.CategoryChannel`] -- The "
 #~ "category this channel belongs to."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.Forbidden` -- You do not "
+#~ ":exc:`~pydiscord.Forbidden` -- You do not "
 #~ "have the proper permissions to create"
 #~ " this channel."
 #~ msgstr ""
 
-#~ msgid ":exc:`~discord.HTTPException` -- Creating the channel failed."
+#~ msgid ":exc:`~pydiscord.HTTPException` -- Creating the channel failed."
 #~ msgstr ""
 
 #~ msgid ""
@@ -17404,7 +17404,7 @@ msgstr ":class:`~discord.User`"
 #~ " are unlimited uses. Defaults to 0."
 #~ msgstr ""
 
-#~ msgid ":exc:`~discord.HTTPException` -- Invite creation failed."
+#~ msgid ":exc:`~pydiscord.HTTPException` -- Invite creation failed."
 #~ msgstr ""
 
 #~ msgid ""
@@ -17413,17 +17413,17 @@ msgstr ":class:`~discord.User`"
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.Forbidden` -- You do not "
+#~ ":exc:`~pydiscord.Forbidden` -- You do not "
 #~ "have proper permissions to delete the"
 #~ " channel."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.NotFound` -- The channel was"
+#~ ":exc:`~pydiscord.NotFound` -- The channel was"
 #~ " not found or was already deleted."
 #~ msgstr ""
 
-#~ msgid ":exc:`~discord.HTTPException` -- Deleting the channel failed."
+#~ msgid ":exc:`~pydiscord.HTTPException` -- Deleting the channel failed."
 #~ msgstr ""
 
 #~ msgid ""
@@ -17432,13 +17432,13 @@ msgstr ":class:`~discord.User`"
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.Forbidden` -- You do not "
+#~ ":exc:`~pydiscord.Forbidden` -- You do not "
 #~ "have proper permissions to get the "
 #~ "information."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.HTTPException` -- An error "
+#~ ":exc:`~pydiscord.HTTPException` -- An error "
 #~ "occurred while fetching the information."
 #~ msgstr ""
 
@@ -17452,66 +17452,66 @@ msgstr ":class:`~discord.User`"
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.Forbidden` -- You do not "
+#~ ":exc:`~pydiscord.Forbidden` -- You do not "
 #~ "have permissions to edit channel "
 #~ "specific permissions."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.HTTPException` -- Editing channel "
+#~ ":exc:`~pydiscord.HTTPException` -- Editing channel "
 #~ "specific permissions failed."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.NotFound` -- The role or "
+#~ ":exc:`~pydiscord.NotFound` -- The role or "
 #~ "member being edited is not part of"
 #~ " the guild."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.InvalidArgument` -- The overwrite "
+#~ ":exc:`~pydiscord.InvalidArgument` -- The overwrite "
 #~ "parameter invalid or the target type "
-#~ "was not :class:`~discord.Role` or "
-#~ ":class:`~discord.Member`."
+#~ "was not :class:`~pydiscord.Role` or "
+#~ ":class:`~pydiscord.Member`."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.Forbidden` -- You do not "
+#~ ":exc:`~pydiscord.Forbidden` -- You do not "
 #~ "have permissions to get channel message"
 #~ " history."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.HTTPException` -- The request "
+#~ ":exc:`~pydiscord.HTTPException` -- The request "
 #~ "to get message history failed."
 #~ msgstr ""
 
-#~ msgid ":exc:`~discord.NotFound` -- The specified message was not found."
+#~ msgid ":exc:`~pydiscord.NotFound` -- The specified message was not found."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.Forbidden` -- You do not "
+#~ ":exc:`~pydiscord.Forbidden` -- You do not "
 #~ "have the permissions required to get "
 #~ "a message."
 #~ msgstr ""
 
-#~ msgid ":exc:`~discord.HTTPException` -- Retrieving the message failed."
+#~ msgid ":exc:`~pydiscord.HTTPException` -- Retrieving the message failed."
 #~ msgstr ""
 
-#~ msgid ":exc:`~discord.HTTPException` -- Retrieving the pinned messages failed."
+#~ msgid ":exc:`~pydiscord.HTTPException` -- Retrieving the pinned messages failed."
 #~ msgstr ""
 
-#~ msgid ":exc:`~discord.HTTPException` -- Sending the message failed."
+#~ msgid ":exc:`~pydiscord.HTTPException` -- Sending the message failed."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.Forbidden` -- You do not "
+#~ ":exc:`~pydiscord.Forbidden` -- You do not "
 #~ "have the proper permissions to send "
 #~ "the message."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.InvalidArgument` -- The ``files`` "
+#~ ":exc:`~pydiscord.InvalidArgument` -- The ``files`` "
 #~ "list is not of the appropriate "
 #~ "size or you specified both ``file`` "
 #~ "and ``files``."
@@ -17695,7 +17695,7 @@ msgstr ":class:`~discord.User`"
 #~ "message was done with text-to-"
 #~ "speech. This can only be accurately "
 #~ "received in :func:`on_message` due to a"
-#~ " discord limitation."
+#~ " pydiscord limitation."
 #~ msgstr ""
 
 #~ msgid ""
@@ -18841,16 +18841,16 @@ msgstr ":class:`~discord.User`"
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.ClientException` -- You are "
+#~ ":exc:`~pydiscord.ClientException` -- You are "
 #~ "already connected to a voice channel."
 #~ msgstr ""
 
 #~ msgid ""
-#~ ":exc:`~discord.opus.OpusNotLoaded` -- The opus "
+#~ ":exc:`~pydiscord.opus.OpusNotLoaded` -- The opus "
 #~ "library has not been loaded."
 #~ msgstr ""
 
-#~ msgid ":class:`~discord.VoiceClient`"
+#~ msgid ":class:`~pydiscord.VoiceClient`"
 #~ msgstr ""
 
 #~ msgid ":class:`str` -- The category name."

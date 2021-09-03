@@ -1,5 +1,5 @@
 #
-# discord.py documentation build configuration file, created by
+# pydiscord.py documentation build configuration file, created by
 # sphinx-quickstart on Fri Aug 21 05:43:30 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -79,7 +79,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'discord.py'
+project = 'pydiscord.py'
 copyright = '2015-present, Rapptz'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -89,7 +89,7 @@ copyright = '2015-present, Rapptz'
 # The short X.Y version.
 
 version = ''
-with open('../discord/__init__.py') as f:
+with open('../pydiscord/__init__.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
 # The full version, including alpha/beta/rc tags.
@@ -161,13 +161,13 @@ html_theme = 'basic'
 html_context = {
   'discord_invite': 'https://discord.gg/r3sSKJJ',
   'discord_extensions': [
-    ('discord.ext.commands', 'ext/commands'),
-    ('discord.ext.tasks', 'ext/tasks'),
+    ('pydiscord.ext.commands', 'ext/commands'),
+    ('pydiscord.ext.tasks', 'ext/tasks'),
   ],
 }
 
 resource_links = {
-  'discord': 'https://discord.gg/r3sSKJJ',
+  'pydiscord': 'https://discord.gg/r3sSKJJ',
   'issues': 'https://github.com/Rapptz/discord.py/issues',
   'discussions': 'https://github.com/Rapptz/discord.py/discussions',
   'examples': f'https://github.com/Rapptz/discord.py/tree/{branch}/examples',
@@ -271,7 +271,7 @@ html_js_files = [
 ]
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'discord.pydoc'
+htmlhelp_basename = 'pydiscord.pydoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -293,7 +293,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'discord.py.tex', 'discord.py Documentation',
+  ('index', 'pydiscord.py.tex', 'pydiscord.py Documentation',
    'Rapptz', 'manual'),
 ]
 
@@ -323,7 +323,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'discord.py', 'discord.py Documentation',
+    ('index', 'pydiscord.py', 'pydiscord.py Documentation',
      ['Rapptz'], 1)
 ]
 
@@ -337,8 +337,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'discord.py', 'discord.py Documentation',
-   'Rapptz', 'discord.py', 'One line description of project.',
+  ('index', 'pydiscord.py', 'pydiscord.py Documentation',
+   'Rapptz', 'pydiscord.py', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -358,4 +358,4 @@ def setup(app):
   if app.config.language == 'ja':
     app.config.intersphinx_mapping['py'] = ('https://docs.python.org/ja/3', None)
     app.config.html_context['discord_invite'] = 'https://discord.gg/nXzj3dg'
-    app.config.resource_links['discord'] = 'https://discord.gg/nXzj3dg'
+    app.config.resource_links['pydiscord'] = 'https://discord.gg/nXzj3dg'

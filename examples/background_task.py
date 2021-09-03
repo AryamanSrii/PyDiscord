@@ -1,8 +1,9 @@
-from discord.ext import tasks
+from pydiscord.ext import tasks
 
-import discord
+import pydiscord
 
-class MyClient(discord.Client):
+
+class MyClient(pydiscord.Client):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -25,6 +26,7 @@ class MyClient(discord.Client):
     @my_background_task.before_loop
     async def before_my_task(self):
         await self.wait_until_ready() # wait until the bot logs in
+
 
 client = MyClient()
 client.run('token')

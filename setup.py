@@ -1,12 +1,10 @@
 from setuptools import setup
 import re
 
-requirements = []
 with open('requirements.txt') as f:
-  requirements = f.read().splitlines()
+    requirements = f.read().splitlines()
 
-version = ''
-with open('discord/__init__.py') as f:
+with open('pydiscord/__init__.py') as f:
     version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]', f.read(), re.MULTILINE).group(1)
 
 if not version:
@@ -29,8 +27,7 @@ if version.endswith(('a', 'b', 'rc')):
     except Exception:
         pass
 
-readme = ''
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 extras_require = {
@@ -46,33 +43,33 @@ extras_require = {
 }
 
 packages = [
-    'discord',
-    'discord.types',
-    'discord.ui',
-    'discord.webhook',
-    'discord.ext.commands',
-    'discord.ext.tasks',
+    'pydiscord',
+    'pydiscord.types',
+    'pydiscord.ui',
+    'pydiscord.webhook',
+    'pydiscord.ext.commands',
+    'pydiscord.ext.tasks',
 ]
 
-setup(name='discord.py',
+setup(name='PyDiscord',
       author='Rapptz',
-      url='https://github.com/Rapptz/discord.py',
+      url='https://github.com/PyDiscord/PyDiscord',
       project_urls={
-        "Documentation": "https://discordpy.readthedocs.io/en/latest/",
-        "Issue tracker": "https://github.com/Rapptz/discord.py/issues",
+        "Documentation": "https://pydiscord.readthedocs.io/en/latest/",
+        "Issue tracker": "https://github.com/PyDiscord/PyDiscord/issues",
       },
       version=version,
       packages=packages,
       license='MIT',
-      description='A Python wrapper for the Discord API',
+      description='A Python wrapper for the Discord API, based on discord.py',
       long_description=readme,
-      long_description_content_type="text/x-rst",
+      long_description_content_type="text/markdown",
       include_package_data=True,
       install_requires=requirements,
       extras_require=extras_require,
       python_requires='>=3.8.0',
       classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 4 - Beta',
         'License :: OSI Approved :: MIT License',
         'Intended Audience :: Developers',
         'Natural Language :: English',
